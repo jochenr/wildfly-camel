@@ -1619,7 +1619,7 @@
         <include artifact="org.apache.xmlgraphics:fop" />
         <include artifact="org.apache.xmlgraphics:xmlgraphics-commons" />
         <dependencies>
-            <module name="javax.api" />
+            <module name="jdk.xml.dom" />
             <module name="org.apache.avalon.framework" />
         </dependencies>
     </module>

@@ -50,7 +50,7 @@ public class VersionsValidatorTest {
     public void before() throws Exception {
         camelRoot = getRootNode("camel-parent");
         wfcRoot = getRootNode("wildfly-camel");
-        wfRoot = getRootNode("wildfly-parent");
+        wfRoot = getRootNode("wildfly-component-matrix");
 
         mapping.put("version.camel.apns", "java-apns-version");
         mapping.put("version.camel.jgroups", "jgroups-version");
