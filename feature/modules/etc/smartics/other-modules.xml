@@ -952,6 +952,13 @@
         </dependencies>
     </module>
 
+    <module name="io.micrometer">
+        <properties>
+            <property name="jboss.api" value="private"/>
+        </properties>
+        <include artifact="io.micrometer:micrometer-core" />
+    </module>
+
     <module name="io.netty" inherit-slot="false" slot="3.10">
         <properties>
             <property name="jboss.api" value="private"/>
@@ -1749,6 +1756,7 @@
         <include artifact="com.github.dozermapper:dozer-schema" />
         <apply-to-dependencies skip="true">
             <include module="org.osgi.core" />
+            <include module="org.projectlombok" />
         </apply-to-dependencies>
         <dependencies>
             <module name="javax.api"/>
@@ -1999,11 +2007,25 @@
         <include artifact="org.jxmpp:jxmpp-util-cache" />
     </module>
 
+    <module name="org.latencyutils">
+        <properties>
+            <property name="jboss.api" value="private"/>
+        </properties>
+        <include artifact="org.latencyutils:LatencyUtils" />
+    </module>
+
     <module name="org.lz4">
         <properties>
             <property name="jboss.api" value="private"/>
         </properties>
         <include artifact="org.lz4:lz4-java" />
+    </module>
+
+    <module name="org.objenesis" >
+        <properties>
+            <property name="jboss.api" value="private"/>
+        </properties>
+        <include artifact="org.objenesis:objenesis" />
     </module>
 
     <module name="org.osgi.core">
@@ -2029,6 +2051,7 @@
             <module name="javax.api"/>
         </dependencies>
         <exports>
+            <exclude path="com/mongodb/client/internal**" />
             <exclude path="com/mongodb/internal**" />
             <exclude path="org/bson/internal" />
         </exports>

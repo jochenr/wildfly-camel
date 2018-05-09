@@ -17,8 +17,11 @@ zipkin
 [planned]
 
 [undecided]
+as2-parent
 aws-xray
 lra
+rxjava2
+spring-dm
 
 [rejected]
 bam                                 #deprecated

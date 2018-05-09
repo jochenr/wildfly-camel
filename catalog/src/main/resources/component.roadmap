@@ -161,6 +161,7 @@ msv
 mustache
 mvel
 mybatis
+mybatis-bean
 nagios
 nats
 netty4
@@ -261,10 +262,12 @@ restlet                                             #2024 Blocked by camel-2.21.
 
 [undecided]
 elasticsearch-rest
+elasticsearch5-rest
 ganglia                                             #1998 No test coverage for ganglia in camel
 solr                                                #2030 No test coverage for solr in camel
 solrCloud                                           #2031 No test coverage for solr in camel
 solrs                                               #2032 No test coverage for solr in camel
+web3j
 xchange
 
 [rejected]
@@ -295,7 +298,7 @@ ignite-set                                          #1834 Competitor to JDG
 ironmq                                              #2006 Not another messaging system
 javaspace                                           #deprecated
 jetty                                               #2009 No alternative HTTP engine
-jira                                                #1451 Requires proprietary binary from Atlassian
+jira                                                #deprecated
 kestrel                                             #deprecated
 krati                                               #deprecated
 mina                                                #deprecated
